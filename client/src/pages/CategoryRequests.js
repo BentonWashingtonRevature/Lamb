@@ -1,4 +1,5 @@
 import React from 'react';
+import "../styles/CategoryRequest"
 
 // Import the `useParams()` hook
 import { useParams } from 'react-router-dom';
@@ -41,6 +42,8 @@ const CategoryRequest = () => {
           {request.title}
         </blockquote>
       </div>
+      
+    
 
     </div>
   );
