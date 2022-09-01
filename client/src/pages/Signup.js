@@ -6,6 +6,14 @@ import { ADD_USER } from '../utils/mutations';
 
 import Auth from '../utils/auth';
 
+import Hero1 from "../assets/Superhero1.png"
+import Hero2 from "../assets/Superhero-2.png"
+import Hero3 from "../assets/Superhero-3.png"
+import Hero4 from "../assets/Superhero-4.png"
+import Hero5 from "../assets/Superhero-5.png"
+import LogoBlk from "../assets/5.png"
+import background from "../assets/city.png"
+
 const Signup = () => {
   const [formState, setFormState] = useState({
     username: '',
@@ -40,6 +48,11 @@ const Signup = () => {
 
   return (
     <main className="flex-row justify-center mb-4">
+      <div>
+      <img id="HeroLH" src={Hero3} />
+      <h1 id='LoginHeader'> Let's put your super power to use </h1>
+
+      </div>
       <div className="col-12 col-lg-10">
         <div className="card">
           <h4 className="card-header bg-dark text-light p-2">Sign Up</h4>

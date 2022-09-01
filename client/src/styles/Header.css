@@ -110,3 +110,9 @@ header {
 body {
     background-image: url(../assets/city.png);
 }
+
+#HeroLH {
+    max-width: 10%;
+    text-align: center;
+    margin-left: 42%;
+}
