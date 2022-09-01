@@ -8,9 +8,9 @@ import logo from "../../assets/3.png"
 import logoWhite from "../../assets/2.png"
 
 import Hero1 from "../../assets/Superhero1.png"
-import Hero2 from "../../assets/Superhero-2.png"
-import Hero3 from "../../assets/Superhero-3.png"
-import Hero4 from "../../assets/Superhero-4.png"
+// import Hero2 from "../../assets/Superhero-2.png"
+// import Hero3 from "../../assets/Superhero-3.png"
+// import Hero4 from "../../assets/Superhero-4.png"
 
 
 const Header = () => {
@@ -23,10 +23,10 @@ const Header = () => {
             <div className="container flex-row justify-space-between-lg justify-center align-center">
                 <div>
                     <Link className="text-light" to="/">
-                        {/* <h1 className="m-0">Hero.IO</h1> */}
-                        {/* <img id="logoWhite" src={logoWhite} />                        */}
-                        <img id="logo" src={logo} />                       
-                        {/* <img id="headerpic" src={Hero1} /> */}
+                        <h1 className="m-0">Hero.IO</h1>
+                        <img id="logoWhite" src={logoWhite} alt=''/>                       
+                        <img id="logo" src={logo} alt=''/>                       
+                        <img id="headerpic" src={Hero1} alt=''/>
 
                     </Link>
                     <p className="m-0">Friendly Neighborhood Super Heroes.</p>
@@ -51,10 +51,10 @@ const Header = () => {
                             </Link>
                         </>
                     )}
-{/* 
+
                     <div>
-                    <img id="headerpic" src={Hero1} />
-                    </div> */}
+                    <img id="headerpic" src={Hero1} alt=''/>
+                    </div>
                 </div>
 
 

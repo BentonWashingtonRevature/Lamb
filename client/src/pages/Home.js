@@ -42,15 +42,15 @@ const Home = () => {
         </div>
       </div>
       <div>
-       <img id="LogoBlk" src={LogoBlk} />
+       <img id="LogoBlk" src={LogoBlk} alt=''/>
        <h1 id='home1'> Citizens are waiting for your help...</h1>
       </div>
       <div>        
-          <img id="Hero1" src={Hero1} />
-          <img id="Hero2" src={Hero2} />
-          <img id="Hero3" src={Hero3} />
-          <img id="Hero4" src={Hero4} />
-          <img id="Hero5" src={Hero5} />
+          <img id="Hero1" src={Hero1} alt=''/>
+          <img id="Hero2" src={Hero2} alt=''/>
+          <img id="Hero3" src={Hero3} alt=''/>
+          <img id="Hero4" src={Hero4} alt=''/>
+          <img id="Hero5" src={Hero5} alt=''/>
       </div>
 
     </main>

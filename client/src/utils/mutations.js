@@ -38,10 +38,9 @@ export const DELETE_USER = gql`
 `;
 
 export const ADD_REQUEST = gql`
-  mutation addRequest($title: String!, $description: String!, $details: String!, $category: ID!) {
-    addRequest(title: $title, description: $description, details: $details, category: $category ) {
+  mutation addRequest($title: String!, $description: String!, $details: String!) {
+    addRequest(title: $title, description: $description, details: $details) {
       _id
-      category
       title
       description
       details
@@ -55,7 +54,6 @@ export const UPDATE_REQUEST = gql`
   mutation updateRequest($description: String!, $details: String!) {
     updateRequest(description: $description, details: $details) {
       _id
-      category
       title
       description
       details

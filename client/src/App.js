@@ -51,17 +51,17 @@ function App() {
             <Routes>
               <Route
                 path="/"
-                element={<Home/>}
-                />
+                element={<Home />}
+              />
               <Route
                 path="/login"
-                element={<Login/>}
+                element={<Login />}
               />
               <Route
                 path="/signup"
-                element={<Signup/>}
+                element={<Signup />}
               />
-              
+
 
 
 
