@@ -16,7 +16,7 @@ const Footer = () => {
           </button>
         )}
         <h4>
-          SevenTech Inc.
+          HERO.IO Inc.
         </h4>
       </div>
     </footer>
