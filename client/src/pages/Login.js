@@ -3,6 +3,15 @@ import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
 
+import Hero1 from "../assets/Superhero1.png"
+import Hero2 from "../assets/Superhero-2.png"
+import Hero3 from "../assets/Superhero-3.png"
+import Hero4 from "../assets/Superhero-4.png"
+import Hero5 from "../assets/Superhero-5.png"
+import LogoBlk from "../assets/5.png"
+import background from "../assets/city.png"
+
+
 import Auth from '../utils/auth';
 
 const Login = (props) => {
@@ -41,7 +50,14 @@ const Login = (props) => {
   };
 
   return (
+    
     <main className="flex-row justify-center mb-4">
+    <div>
+    </div>
+    <div>
+    <img id="LHero1" src={Hero2} />
+    <h1 id='LoginHeader'> Login to help your fellow citizens </h1>
+      </div>
       <div className="col-12 col-lg-10">
         <div className="card">
           <h4 className="card-header bg-dark text-light p-2">Login</h4>
