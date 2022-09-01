@@ -45,7 +45,7 @@ const RequestList = ({
                             className="btn btn-primary btn-block btn-squared"
                             to={`/requests/${request._id}`}
                         >
-                            Join the discussion on this request.
+                            Category: 
                         </Link>
                     </div>
                 ))}
