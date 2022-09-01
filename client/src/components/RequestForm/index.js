@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 
 import { ADD_REQUEST } from '../../utils/mutations';
-import { QUERY_REQUESTS, QUERY_ME } from '../../utils/queries';
-
+import { QUERY_REQUESTS } from '../../utils/queries';
+// import { QUERY_ME } from '../../utils/queries';
 
 import Auth from '../../utils/auth';
 
@@ -27,11 +27,11 @@ const RequestForm = () => {
                 console.error(e);
             }
 
-            const { me } = cache.readQuery({ query: QUERY_ME });
-            cache.writeQuery({
-                query: QUERY_ME,
-                data: { me: { ...me, requests: [...me.requests, addRequest] } },
-            });
+            // const { me } = cache.readQuery({ query: QUERY_ME });
+            // cache.writeQuery({
+            //     query: QUERY_ME,
+            //     data: { me: { ...me, requests: [...me.requests, addRequest] } },
+            // });
         },
     });
 
