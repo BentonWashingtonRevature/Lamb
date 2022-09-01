@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Auth from '../../utils/auth';
+
 import '../../styles/header.css';
 import logo from "../../assets/3.png"
 import logoWhite from "../../assets/2.png"
