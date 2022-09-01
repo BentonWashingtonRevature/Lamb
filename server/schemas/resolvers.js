@@ -13,15 +13,11 @@ const resolvers = {
         user: async (parent, { username }) => {
             return User.findOne({ username }).populate('requests');
         },
-        categories: async () => {
-            return await Category.find({});
-        },
+
         requests: async () => {
             return await Request.find({});
         },
-        catrequests: async (parent, args) => {
-            return await Request.find({ category: args.category });
-        },
+
     },
 
     Mutation: {
@@ -54,14 +50,14 @@ const resolvers = {
         deleteUser: async (parent, { }) => {
             return await User.findByIdAndDelete({ _id: userId })
         },
-        addRequest: async (parent, { title, description, details, category }, context) => {
+        addRequest: async (parent, { title, description, details, }, context) => {
             if (context.user) {
                 const request = await Request.create({
                     title,
                     description,
                     details,
                     requestAuthor: context.user.username,
-                    category
+            
                 });
 
                 await User.findOneAndUpdate(

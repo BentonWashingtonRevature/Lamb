@@ -25,11 +25,7 @@ const requestSchema = new Schema(
             default: Date.now,
             get: (timestamp) => dateFormat(timestamp)
         },
-        category: {
-                type: Schema.Types.ObjectId,
-                ref: 'Category',
-                required: true
-            },
+
     }
 );
 

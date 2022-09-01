@@ -5,14 +5,14 @@ import { useMutation } from '@apollo/client';
 import { ADD_REQUEST } from '../../utils/mutations';
 import { QUERY_REQUESTS, QUERY_ME } from '../../utils/queries';
 
+
 import Auth from '../../utils/auth';
 
 const RequestForm = () => {
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [details, setDetails] = useState('');
-    const [category, setCategory] = useState('');
-    const [characterCount, setCharacterCount] = useState(0);
+    // const [category, setCategory] = useState('');
 
     const [addRequest, { error }] = useMutation(ADD_REQUEST, {
         update(cache, { data: { addRequest } }) {
@@ -44,11 +44,11 @@ const RequestForm = () => {
                     title,
                     description,
                     details,
-                    category,
+                    // category,
                     requestAuthor: Auth.getProfile().data.username,
                 },
             });
-            setCategory('');
+            // setCategory('');
             setTitle('');
             setDescription('');
             setDetails('');
@@ -60,9 +60,8 @@ const RequestForm = () => {
     const handleChange = (event) => {
         const { name, value } = event.target;
 
-        if (name === 'description' && value.length <= 280) {
+        if (name === 'description') {
             setDescription(value)
-            setCharacterCount(value.length);
         }
         if (name === 'title') {
             setTitle(value)
@@ -70,9 +69,9 @@ const RequestForm = () => {
         if (name === 'details') {
             setDetails(value)
         }
-        if (name === 'category') {
-            setCategory(value)
-        }
+        // if (name === 'category') {
+        //     setCategory(value)
+        // }
     };
 
     return (
@@ -81,25 +80,12 @@ const RequestForm = () => {
 
             {Auth.loggedIn() ? (
                 <>
-                    <p
-                        className={`m-0 ${characterCount === 280 || error ? 'text-danger' : ''
-                            }`}
-                    >
-                        Character Count: {characterCount}/280
-                    </p>
+
                     <form
                         className='flex-row justify-center justify-space-between-md align-center'
                         onSubmit={handleFormSubmit}
                     >
                         <div className="col-12 col-lg-9">
-                            <div className='dropdown'
-                                 name="category"
-                                 onChange={handleChange}
-                                 >
-
-
-                            </div>
-                            
 
 
                             <textarea
