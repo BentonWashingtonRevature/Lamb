@@ -1,3 +1,90 @@
 header {
     background-color: black;
 }
+
+#logo {
+    max-width: 50%;
+}
+
+#Hero1 {
+    max-width: 20%;
+}
+
+#Hero1:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+    }
+
+#Hero2 {
+    max-width: 20%;
+}
+
+#Hero2:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+    }
+
+#Hero3 {
+    max-width: 20%;
+}
+
+#Hero3:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+    }
+
+#Hero4 {
+    max-width: 20%;
+}
+
+#Hero4:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+    }
+
+#Hero5 {
+    max-width: 15%;
+}
+
+#Hero5:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+    }
+
+#LogoBlk {
+    max-width: 50%;
+    margin-left: 33%;
+    
+}
+
+#LogoBlk:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+    }
+
+#headerpic {
+    max-width: 5%;
+    margin-left: 75%;
+}
+
+#logoWhite {
+    max-width: 5%;
+    margin-bottom: 3%;
+}
+
+#home1 {
+    margin-left: 25%;
+    margin-top: 5%;
+}
