@@ -6,7 +6,7 @@ import RequestForm from '../components/RequestForm';
 
 import { QUERY_REQUESTS } from '../utils/queries';
 
-import '../styles/header.css';
+import '../styles/Header.css';
 
 import Hero1 from "../assets/Superhero1.png"
 import Hero2 from "../assets/Superhero-2.png"

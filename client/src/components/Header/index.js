@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Auth from '../../utils/auth';
 
-import '../../styles/header.css';
+import '../../styles/Header.css';
 import logo from "../../assets/3.png"
 import logoWhite from "../../assets/2.png"
 
@@ -23,11 +23,7 @@ const Header = () => {
             <div className="container flex-row justify-space-between-lg justify-center align-center">
                 <div>
                     <Link className="text-light" to="/">
-                        <h1 className="m-0">Hero.IO</h1>
-                        <img id="logoWhite" src={logoWhite} alt=''/>                       
                         <img id="logo" src={logo} alt=''/>                       
-                        <img id="headerpic" src={Hero1} alt=''/>
-
                     </Link>
                     <p className="m-0">Friendly Neighborhood Super Heroes.</p>
                 </div>
@@ -52,9 +48,7 @@ const Header = () => {
                         </>
                     )}
 
-                    <div>
-                    <img id="headerpic" src={Hero1} alt=''/>
-                    </div>
+ 
                 </div>
 
 
