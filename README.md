@@ -15,7 +15,8 @@ GraphQl, CSS, React.js, Node.js, MongoDb, Axios
 
 
 # How to Deploy UnsubHub
-![Deployed Website]()
+![Deployed Website](https://dev8057.d2bcqfip8p0c5j.amplifyapp.com/)
+https://dev8057.d2bcqfip8p0c5j.amplifyapp.com/
 
 ### What was your motivation?
 We wanted to make an app that would make it easier to for individuals in community to reach out get help from thir amazing neighbors and fellow citizens 
